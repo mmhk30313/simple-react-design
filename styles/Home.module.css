@@ -122,22 +122,19 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* padding: 0.5rem 1rem; */
-  /* background-color: #fbfaff; */
-  /* background-color: #E5F1FB; */
-  border-bottom: 1px solid #e5e5e5;
+  /* border-bottom: 1px solid #e5e5e5; */
 }
 
 .side_nav{
-  width: 60px;
+  width: 90px;
   height: 100%;
   position: fixed;
-  z-index: 1;
+  /* z-index: 1; */
   top: 0;
   left: 0;
   background-color: #070336;
-  overflow-x: hidden;
-  padding-top: 60px;
+  /* overflow-x: hidden; */
+  padding-top: 10px;
 }
 
 .head_nav{
@@ -145,8 +142,54 @@
   height: 70px;
   background-color: #fff;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   padding: 0.5rem 1rem;
   box-shadow: 0px 2px 4px -1px #ddd, 0px 4px 5px 0px #ddd, 0px 1px 10px 0px #ddd;
 }
+
+.icon_container{
+  text-align: center; 
+  margin: 30px 0;
+  cursor: pointer;
+}
+
+.icons{
+  height: 25px;
+  width: 25px;
+}
+
+.icon_title{ 
+  color: white; 
+  font-size: 9px; 
+  width: 50px;
+  margin: 0 auto;
+  letter-spacing: 0.8px;
+}
+
+.workspace_input{
+  width: 300px;
+  height: 35px;
+  text-align: center; 
+  padding: 7px 15px;
+  margin-right: 20px;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.workspace_input:focus{
+  border-color: #070336;
+  box-shadow: 0 0 0 0.2rem #0703363b;
+  /* border-color: rgba(126, 239, 104, 0.8);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(126, 239, 104, 0.6);
+  outline: 0 none; */
+  /* outline: 3px solid #0763cd; */
+}
+
+.workspace_input::placeholder{
+  color: #380dae;
+  font-weight: 700;
+}
+
+

@@ -2,7 +2,7 @@
     width: 100%;
     height: 100%;
     display: flex;
-    padding: 0 0 0 60px;
+    padding: 0 0 0 90px;
     /* align-items: center; */
 
 }
@@ -31,8 +31,8 @@
 }
 
 .my_form{
-    width: 100%;
-    margin: 50px 0;
+    width: 97%;
+    margin: 50px 10px;
     padding: 15px;
     background-color: #fff;
     border-radius: 5px;
@@ -49,10 +49,9 @@
     /* justify-content: space-between; */
     /* align-items: center; */
     /* padding: 0 20px; */
-    border-right: 2px solid #ddd;
 }
 
-.side_tab{
+.side_tab, .active{
     width: 90%;
     height: 40px;
     margin: 5px 0;
@@ -64,17 +63,10 @@
 }
 
 .active{
-    width: 90%;
-    height: 40px;
-    margin: 5px 0;
-    margin-right: 10px;
-    padding: 0 10px;
-    text-align: center;
-    cursor: pointer;
-    border-radius: 5px;
     background-color: #f3f6ff;
     border-bottom: 1px solid #e5e5e5;
 }
+
 .side_tab:hover{
     background-color: #f3f6ff;
     border-bottom: 1px solid #e5e5e5;
@@ -97,8 +89,90 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
+    /* justify-content: space-between;
+    align-items: center; */
+    padding: 0 15px;
+    border-left: 2px solid #ddd;
 }
+
+.input_field_container{
+    width: 100%;
+    position: relative;
+    /* border: 1px solid #ddd; */
+    margin: 18px 15px;
+}
+
+.input_field_container label{
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    margin-bottom: 10px;
+}
+
+.input_field{
+    width: 100%;
+    height: 55px;
+    padding: 0 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    border: 2px solid #ddd;
+    outline: none;
+}
+
+.input_field:focus{
+    /* border-color: #070336; */
+    box-shadow: 0 0 0 0.1rem #0703363b;
+    /* border-color: rgba(126, 239, 104, 0.8);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(126, 239, 104, 0.6);
+    outline: 0 none; */
+    /* outline: 3px solid #0763cd; */
+}
+
+.input_field::placeholder{
+    color: #a9a9a9;
+    font-size: 16px;
+}
+
+.input_field_container .btn{
+    position: absolute;
+    border: none;
+    top: 55%;
+    right: 3%;
+    width: 100px;
+    padding: 7px;
+    cursor: pointer;
+    border-radius: 3px;
+    padding: 7px;
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    z-index: 1;
+}
+
+.input_field_container .btn:focus, .delete_account:focus{
+    box-shadow: 0 0 0 0.1rem #0703363b;
+}
+
+.delete_account{
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    margin: auto;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+    padding: 10px 55px !important;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+}
+
+.input_field_container .switch{
+    position: absolute;
+    top: 55%;
+    right: 7%;
+}
+
 
